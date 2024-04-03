@@ -1,5 +1,5 @@
-# Use the latest Node.js image as the base image
-FROM node:latest AS builder
+# Use specific Node.js version as the base image
+FROM node:20.11.1 AS builder
 
 # Set working directory
 WORKDIR /app
