@@ -17,10 +17,10 @@ RUN npm install
 COPY . .
 
 # Build the Angular app for production
-RUN ng build --prod
+RUN ng build 
 
 # Expose port 4200 for incoming HTTP traffic
 EXPOSE 4200
 
 # Start the Angular development server when the container starts
-CMD ["ng", "serve", "--host", "0.0.0.0", "--port", "4200"]
+CMD ["ng", "serve"]
