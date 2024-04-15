@@ -4,7 +4,7 @@ FROM node:latest as builder
 WORKDIR /app
 COPY package.json ./
 RUN npm install -g @angular/cli
-RUN npm install
+#RUN npm install
 COPY . .
 RUN ng build
 FROM nginx:alpine
